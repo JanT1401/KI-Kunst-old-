@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="jebated.png" type="image/x-icon">
+    <style>
+      img {
+        transition: box-shadow 0.3s;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+      }
+
+      img:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      p {
+        margin: 0px;
+        color: black;
+        font-family: Arial;
+      }
+
+      .title {
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+
+      .card {
+        display: grid;
+        grid-column: 1fr;
+        margin-left: 200px;
+        margin-right: 200px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        transition: box-shadow 0.15s;
+      }
+
+      .card:hover {
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+      }
+
+      .info {
+        font-size: 18px;
+      }
+
+      .chatgpt-button, .midjourney-button {
+        border: none;
+        background-color: rgb(0, 153, 0);
+        width: 400px;
+        height: 140px;
+        border-radius: 10px;
+        color: white;
+        font-weight: 700;
+        font-size: 26px;
+        box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+        transition: box-shadow 0.3s,
+          opacity 0.15s;
+      }
+
+      .midjourney-button {
+        background-color: rgb(0, 75, 187);
+      }
+
+      .chatgpt-button:hover, .midjourney-button:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .chatgpt-button:active, .midjourney-button:active {
+        opacity: 0.7;
+      }
+    </style>
+    <title>KI Kunst</title>
+</head>
+<body style="
+  background-color: rgb(46, 46, 46);
+">
+  <div style="
+    text-align: center;
+  ">
+    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">
+      <p style="
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 30px;
+      text-align: center;
+      margin-top: 26px;
+      display: inline-block;
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 26px;
+      color: white;
+    ">
+        KI-Kunst
+      </p>
+    </a>
+  </div>
+  <div class="structure" style="
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  ">
+    <div class="card">
+      <p class="title">
+        Was ist KI-Kunst eigentlich?
+      </p>
+      <p class="info">
+        Im Gegensatz zu einem normalen Gemälde, bei dem ein Künstler ein Bild mit Mühe und Arbeit selber malt, zeigt KI-Kunst, dass es auch anders geht: 
+        Heutzutage ist es möglich mit Hilfe von künstlicher Intelligenz mit nur ein wenig Bildbeschreibung innerhalb von weniger Sekunden ein Kunstwerk zu erschaffen. 
+      </p>
+    </div>
+    <div class="card">
+      <p class="title">
+        Wie wird KI-Kunst erschaffen?
+      </p>
+      <p class="info">
+        Derzeit existieren spezielle Programme, die es ermöglichen, mithilfe von KI Kunstwerke zu erschaffen. Die bekanntesten Tools zur Erstellung sind Stable Diffusion und Midjouney. Nach Eingabe der Beschreibung generiert das Programm eine Vielzahl von möglichen Bildern.
+      </p>
+    </div>
+    <div class="card">
+      <p class="title">
+        Wie kann KI in Kreativen Schaffungsprozessen helfen?
+      </p>
+      <p class="info">
+        KI kann Künstlern helfen Inspiration zu finden oder bspw. Bei Skizzen Vorarbeit zu leisten. Bei der Musik Produktion wird KI zur Automatischen Erstellung von Stimm-Samples genutzt. Es dient also als erweitertes Gedächtnis, das mithilfe von Mustererkennung die besten Ergebnisse aus den Datengrundlagen generriet und somit als erweiterter Arm für die Künstlerinnen fungiert. 
+      </p>
+    </div>
+    <div class="card">
+      <p class="title">
+        Wer ist der Urheber bei KI generierter Kunst?
+      </p>
+      <p class="info">
+        Wer auf jeden Fall nicht der Urheber der Kunst ist, ist die KI an sich denn diese Ist auf ihre Daten beschränkt und kann nicht von sich aus kreativ agieren. Rechtlich betrachtet ist der Programmierer also der Schaffer des Schaffenden der Besitzer dieses Geistigen gutes und nicht derjenige der, der KI die Anregung zu diesem gibt.
+      </p>
+    </div>
+  </div>
+    <p style="
+    color: rgb(126, 126, 126);
+    font-size: 5px;
+  ">
+	( ͡° ͜ʖ ͡°)
+  </p>
+  <div style="text-align: center;">
+    <p style="
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 36px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 26px;
+    color: white;
+">
+  Beispiele
+</p>
+  </div>
+  <div style="
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    column-gap: 20px;
+    grid-template-rows: 200px 200px 200px 200px;
+    row-gap: 20px;
+    justify-content: center;
+  ">
+    <img src="mid-2.png" style="
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+  ">
+    <img src="mid-3.png" style="
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+  ">
+    <img src="mid-4.png" style="
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+  ">
+    <img src="mid-5.jpeg" style="
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+  ">
+    <img src="mid-1.png" style="
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+  ">
+    <img src="mid-6.png" style="
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+  ">
+    <img src="mid-7.webp" style="
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+  ">
+    <img src="mid-8.webp" style="
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+  ">
+    <img src="mid-9.jpeg" style="
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+  ">
+    <img src="mid-10.png" style="
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+  ">
+    <img src="mid-11.png" style="
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+  ">
+    <img src="mid-12.jpeg" style="
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+  ">
+    <img src="mid-13.png" style="
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+  ">
+    <img src="mid-14.png" style="
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+  ">
+    <img src="mid-15.jpeg" style="
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+  ">
+    <img src="mid-16.jpeg" style="
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+  ">
+  </div>
+  <div style="text-align: center;">
+    <p style="
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 60px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 26px;
+    color: white;
+">
+  KI-Webseiten
+    </p>
+  </div>
+  <div style="
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    column-gap: 45px;
+    align-items: center;
+	  justify-content: center;
+  ">
+    <a href="https://openai.com/blog/chatgpt" target="_blank">
+      <button class="chatgpt-button">
+        ChatGPT
+      </button>
+    </a>
+    <a href="https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F" target="_blank">
+      <button class="midjourney-button">
+        Midjourney
+      </button>
+    </a>
+  </div>
+  <div style="text-align: center;">
+    <p style="
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 60px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 26px;
+    color: white;
+">
+  Informationsvideo
+    </p>
+  </div>
+  <div style="
+    background-color: white;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 10px;
+    padding: 20px;
+  ">
+    <video autoplay controls height="360px" width="640px" style="
+      border-radius: 10px;
+      margin: 0 auto;
+      display: block;
+    ">
+	    <source src="sample-mp4-file-small.mp4" type="video/mp4">
+	  </video>
+  </div>
+</body>
+</html>
